@@ -1,0 +1,10 @@
+^D:\VTK\VTK-PROJECT\MEDICALDEMO3\BUILD\CMAKEFILES\366582835F8CAA5266A8284F07B53D76\GENERATE.STAMP.RULE
+setlocal
+D:\VTK\CMake\bin\cmake.exe -SD:/VTK/VTK-Project/MedicalDemo3 -BD:/VTK/VTK-Project/MedicalDemo3/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/VTK/VTK-Project/MedicalDemo3/build/MedicalDemo3.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
